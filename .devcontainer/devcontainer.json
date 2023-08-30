@@ -1,8 +1,3 @@
-// 🇨🇭 swiss knife of cairo tools
-// - scarb
-// - katana
-// - starkli
-
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
     "hostRequirements": {

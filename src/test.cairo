@@ -44,7 +44,7 @@ fn test() {
     };
 
     let initial_theta = TensorTrait::new(
-        shape: array![feature_size].span(), data: zero_array.span(), extra: Option::Some(extra), 
+        shape: array![feature_size].span(), data: zero_array.span(), extra: Option::Some(extra),
     );
 
     zero_array = ArrayTrait::new();
@@ -59,7 +59,7 @@ fn test() {
     };
 
     let initial_y = TensorTrait::new(
-        shape: array![train_size].span(), data: zero_array.span(), extra: Option::Some(extra), 
+        shape: array![train_size].span(), data: zero_array.span(), extra: Option::Some(extra),
     );
 
     let initial_loss = calculate_loss(y_train, initial_y);

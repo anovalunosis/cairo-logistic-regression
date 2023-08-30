@@ -45,7 +45,7 @@ fn calculate_gradient(
     let extra = ExtraParams { fixed_point: Option::Some(FixedImpl::FP16x16(())) };
 
     let scale = TensorTrait::new(
-        shape: array![1].span(), data: array![tensor_size].span(), extra: Option::Some(extra), 
+        shape: array![1].span(), data: array![tensor_size].span(), extra: Option::Some(extra),
     );
 
     let x_transpose = x.transpose(axes: array![1, 0].span());
@@ -60,7 +60,7 @@ fn train_step(
 ) -> Tensor<FixedType> {
     let extra = ExtraParams { fixed_point: Option::Some(FixedImpl::FP16x16(())) };
     let alpha_tensor = TensorTrait::new(
-        shape: array![1].span(), data: array![alpha].span(), extra: Option::Some(extra), 
+        shape: array![1].span(), data: array![alpha].span(), extra: Option::Some(extra),
     );
 
     let y_pred = pred(x, theta).reshape(y.shape);
